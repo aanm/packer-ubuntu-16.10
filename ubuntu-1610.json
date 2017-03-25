@@ -13,7 +13,7 @@
     "builders": [
         {
             "name": "libvirt",
-            "vm_name": "ubuntu-1604-libvirt",
+            "vm_name": "ubuntu-1610-libvirt",
             "type": "qemu",
             "format": "qcow2",
             "disk_interface": "virtio",
@@ -60,7 +60,7 @@
         },
         {
             "name": "virtualbox",
-            "vm_name": "ubuntu-1604-virtualbox",
+            "vm_name": "ubuntu-1610-virtualbox",
             "type": "virtualbox-iso",
             "guest_os_type": "Ubuntu_64",
             "vboxmanage": [
@@ -104,7 +104,7 @@
         },
         {
             "name": "vmware",
-            "vm_name": "ubuntu-1604-vmware",
+            "vm_name": "ubuntu-1610-vmware",
             "type": "vmware-iso",
             "vmx_data": {
                 "cpuid.coresPerSocket": "1",
@@ -168,7 +168,7 @@
             "type": "vagrant",
             "compression_level": 9,
             "keep_input_artifact": true,
-            "output": "ubuntu-1604-{{.BuildName}}.box"
+            "output": "ubuntu-1610-{{.BuildName}}.box"
         }
     ]
 }
