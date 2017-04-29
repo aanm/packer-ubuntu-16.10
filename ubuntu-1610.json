@@ -160,6 +160,12 @@
         {
             "execute_command": "echo 'vagrant' | {{ .Vars }} sudo -E -S bash '{{ .Path }}'",
             "type": "shell",
+            "inline": ["apt-get install open-vm-tools -y"],
+            "only": ["vmware"]
+        },
+        {
+            "execute_command": "echo 'vagrant' | {{ .Vars }} sudo -E -S bash '{{ .Path }}'",
+            "type": "shell",
             "script": "scripts/cleanup.sh"
         }
     ],

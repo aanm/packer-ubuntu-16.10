@@ -34,6 +34,9 @@ install_libvirt:
 	vagrant box add --force cilium/ubuntu-16.10 ubuntu-1610-libvirt.box
 	vagrant up --provider=libvirt
 
+install_vmware:
+	vagrant box add --force cilium/ubuntu-16.10 ubuntu-1610-vmware.box
+
 install_vbox:
 	vagrant box add --force cilium/ubuntu-16.10 ubuntu-1610-virtualbox.box
 	vagrant up --provider=virtualbox
