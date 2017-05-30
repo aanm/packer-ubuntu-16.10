@@ -9,10 +9,10 @@ CLANG_FILE="${CLANG_DIR}.tar.xz"
 CLANG_URL="http://releases.llvm.org/3.8.1/$CLANG_FILE"
 CLANGROOT=/usr/local/clang
 
-wget --quiet https://storage.googleapis.com/golang/go1.8.1.linux-amd64.tar.gz
+wget --quiet https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz
 mkdir -p /usr/local
-tar -C /usr/local -xzf go1.8.1.linux-amd64.tar.gz
-rm go1.8.1.linux-amd64.tar.gz
+tar -C /usr/local -xzf go1.8.3.linux-amd64.tar.gz
+rm go1.8.3.linux-amd64.tar.gz
 
 wget --quiet $CLANG_URL
 mkdir -p /usr/local
