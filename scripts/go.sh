@@ -36,3 +36,10 @@ mkdir -p /home/vagrant/go/src
 
 go get github.com/tools/godep
 cp /home/vagrant/go/bin/godep /usr/bin
+
+go get github.com/jteeuwen/go-bindata/...
+cp /home/vagrant/go/bin/go-bindata /usr/bin
+
+apt-get -y install socat curl jq realpath pv tmux python-sphinx
+pip install --upgrade pip
+pip install sphinx sphinxcontrib-httpdomain sphinxcontrib-openapi
